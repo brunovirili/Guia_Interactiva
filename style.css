@@ -14,6 +14,12 @@ body {
     background-color: var(--color-fondo);
     font-family: "SN Pro", sans-serif;
     line-height: 1.6;
+    padding: 20px 40px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 header {
@@ -123,6 +129,67 @@ nav a:hover {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: none;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+th {
+    background-color: var(--color-principal);
+    color: black;
+    padding: 15px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    border: 2px solid rgb(2, 120, 2);
+}
+
+td {
+    border: 2px solid rgb(2, 120, 2);
+}
+
+tr:hover {
+    background-color: rgba(5, 182, 5, 0.2);
+    transition: 0.3s ease;
+}
+
+.titulo-tabla {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.contenedor-tabla {
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--color-principal);
+    border-radius: 16px;
+    font-weight: bold;
 }
 
 @keyframes aparecer {
