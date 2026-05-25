@@ -1,3 +1,18 @@
+/* ===== VARIABLES ===== */
+:root {
+    --color-principal: rgb(5, 182, 5);
+    --color-fondo: rgb(157, 247, 172);
+}
+
+/* ===== BODY ===== */
+body {
+    background-color: var(--color-fondo);
+    font-family: "SN Pro", sans-serif;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* ===== FIELDSET ===== */
 fieldset {
     width: 400px;
     margin: 60px auto;
@@ -15,6 +30,7 @@ legend {
     font-size: 1.1rem;
 }
 
+/* ===== CAMPOS DE TEXTO ===== */
 fieldset textarea {
     width: 100%;
     padding: 10px 14px;
@@ -36,6 +52,7 @@ fieldset textarea:focus {
     box-shadow: 0 0 0 3px rgba(5, 182, 5, 0.25);
 }
 
+/* ===== BOTÓN ENVIAR ===== */
 fieldset input {
     display: block;
     width: 100%;
@@ -57,6 +74,7 @@ fieldset input:hover {
     transform: scale(1.03);
 }
 
+/* ===== BOTÓN VOLVER ===== */
 .volver {
     text-align: center;
     margin-top: 16px;
@@ -78,4 +96,3 @@ fieldset input:hover {
     color: white;
     transform: scale(1.05);
 }
-

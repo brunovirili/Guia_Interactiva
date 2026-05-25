@@ -30,7 +30,7 @@ Esta página web interactiva trata sobre la importancia de la actividad física 
 ### Página principal
 ![Captura principal](assets/captura1.png)
 
-### Diseño responsive
+### Zona de contacto
 ![Captura responsive](assets/captura2.png)
 
 ## Autor

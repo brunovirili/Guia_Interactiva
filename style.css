@@ -1,3 +1,4 @@
+/* ===== RESET GENERAL ===== */
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +6,13 @@
     font-style: italic;
 }
 
+/* ===== VARIABLES ===== */
 :root {
     --color-principal: rgb(5, 182, 5);
     --color-fondo: rgb(157, 247, 172);
 }
 
+/* ===== BODY ===== */
 body {
     background-color: var(--color-fondo);
     font-family: "SN Pro", sans-serif;
@@ -17,11 +20,13 @@ body {
     padding: 20px 40px;
 }
 
+/* ===== MAIN ===== */
 main {
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* ===== HEADER ===== */
 header {
     display: flex;
     flex-direction: column;
@@ -46,7 +51,11 @@ header img:hover {
     transform: scale(1.03);
 }
 
-h1,
+/* ===== TIPOGRAFÍA ===== */
+h1 {
+    text-align: center;
+}
+
 h2 {
     text-align: center;
 }
@@ -56,6 +65,7 @@ p {
     margin: auto;
 }
 
+/* ===== SECCIONES ===== */
 section {
     margin-top: 40px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -86,6 +96,7 @@ section h2:hover {
     padding: 8px;
 }
 
+/* ===== NAVEGACIÓN ===== */
 nav ul {
     display: flex;
     justify-content: center;
@@ -110,6 +121,7 @@ nav a:hover {
     transform: scale(1.08);
 }
 
+/* ===== CARDS ===== */
 .grid-actividades {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -131,6 +143,7 @@ nav a:hover {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
+/* ===== VIDEO ===== */
 iframe {
     display: block;
     margin: 20px auto;
@@ -138,6 +151,7 @@ iframe {
     border: none;
 }
 
+/* ===== TABLA ===== */
 table {
     width: 90%;
     margin: 20px auto;
@@ -183,6 +197,7 @@ tr:hover {
     margin-top: 20px;
 }
 
+/* ===== CONTACTO ===== */
 .contacto a {
     text-decoration: none;
     color: black;
@@ -201,6 +216,7 @@ tr:hover {
     transform: scale(1.05);
 }
 
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
     margin-top: 40px;
@@ -210,19 +226,19 @@ footer {
     font-weight: bold;
 }
 
+/* ===== ANIMACIONES ===== */
 @keyframes aparecer {
-
     from {
         opacity: 0;
         transform: translateY(-20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+/* ===== RESPONSIVE TABLET ===== */
 @media (max-width: 768px) {
 
     nav ul {
@@ -244,6 +260,7 @@ footer {
     }
 }
 
+/* ===== RESPONSIVE CELULAR ===== */
 @media (max-width: 480px) {
 
     body {
