@@ -28,7 +28,7 @@ Esta página web interactiva trata sobre la importancia de la actividad física 
 ## Capturas del proyecto
 
 ### Página principal
-![Captura principal](assets/pagina1.jpg)
+![Captura principal](assets/pagina.jpg)
 ![Captura principal](assets/pagina2.jpg)
 
 ### Zona de contacto
