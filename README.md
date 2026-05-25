@@ -28,10 +28,11 @@ Esta página web interactiva trata sobre la importancia de la actividad física 
 ## Capturas del proyecto
 
 ### Página principal
-![Captura principal](assets/captura1.png)
+![Captura principal](assets/pagina1.jpg)
+![Captura principal](assets/pagina2.jpg)
 
 ### Zona de contacto
-![Captura responsive](assets/captura2.png)
+![Captura responsive](assets/contacto.jpg)
 
 ## Autor
 - Bruno Virili
