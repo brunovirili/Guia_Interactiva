@@ -1,0 +1,20 @@
+* {
+    background-color: rgb(157, 247, 172);
+}
+
+header h1 {
+    text-align: center;
+    background-color: rgb(5, 182, 5);
+    border-radius: 16px;
+    padding: 5px 5px;
+}
+
+.a {
+    text-align: center;
+    background-color: rgb(6, 223, 6);
+    border-radius: 16px;
+    width: 750px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
