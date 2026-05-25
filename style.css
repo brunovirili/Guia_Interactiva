@@ -183,6 +183,24 @@ tr:hover {
     margin-top: 20px;
 }
 
+.contacto a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--color-principal);
+    padding: 10px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.contacto a:hover {
+    background-color: rgb(2, 120, 2);
+    color: white;
+    transform: scale(1.05);
+}
+
 footer {
     text-align: center;
     margin-top: 40px;
