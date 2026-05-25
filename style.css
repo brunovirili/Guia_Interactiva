@@ -1,27 +1,19 @@
 * {
-    font-style: italic;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-style: italic;
 }
 
 :root {
-  --color-principal: rgb(5, 182, 5);
-  --color-fondo: rgb(157, 247, 172);
+    --color-principal: rgb(5, 182, 5);
+    --color-fondo: rgb(157, 247, 172);
 }
 
 body {
     background-color: var(--color-fondo);
     font-family: "SN Pro", sans-serif;
     line-height: 1.6;
-}
-
-header h1 {
-    text-align: center;
-    background-color: var(--color-principal);
-    border-radius: 16px;
-    padding: 5px 5px;
-    animation: aparecer 1s ease;
 }
 
 header {
@@ -31,26 +23,52 @@ header {
     gap: 20px;
 }
 
+header h1 {
+    text-align: center;
+    background-color: var(--color-principal);
+    border-radius: 16px;
+    padding: 5px;
+    animation: aparecer 1s ease;
+}
+
 header img {
     border-radius: 20px;
     transition: transform 0.4s ease;
-
 }
 
 header img:hover {
     transform: scale(1.03);
 }
 
-h1 {
-    text-align: center;
-}
-
+h1,
 h2 {
     text-align: center;
 }
 
+p {
+    max-width: 1000px;
+    margin: auto;
+}
+
 section {
     margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+section h2 {
+    background-color: var(--color-principal);
+    width: fit-content;
+    margin: 0 auto 20px auto;
+    padding: 10px 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+section h2:hover {
+    transform: scale(1.05);
 }
 
 .a {
@@ -67,7 +85,6 @@ nav ul {
     justify-content: center;
     gap: 25px;
     list-style: none;
-    padding: 0;
 }
 
 nav a {
@@ -109,6 +126,7 @@ nav a:hover {
 }
 
 @keyframes aparecer {
+
     from {
         opacity: 0;
         transform: translateY(-20px);
@@ -143,6 +161,10 @@ nav a:hover {
 
 @media (max-width: 480px) {
 
+    body {
+        padding: 10px;
+    }
+
     h1 {
         font-size: 28px;
     }
@@ -154,9 +176,5 @@ nav a:hover {
     nav a {
         width: 100%;
         text-align: center;
-    }
-
-    body {
-        padding: 10px;
     }
 }
