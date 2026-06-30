@@ -1,0 +1,98 @@
+/* ===== VARIABLES ===== */
+:root {
+    --color-principal: rgb(5, 182, 5);
+    --color-fondo: rgb(157, 247, 172);
+}
+
+/* ===== BODY ===== */
+body {
+    background-color: var(--color-fondo);
+    font-family: "SN Pro", sans-serif;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* ===== FIELDSET ===== */
+fieldset {
+    width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border: 2px solid rgb(2, 120, 2);
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+legend {
+    background-color: var(--color-principal);
+    padding: 6px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ===== CAMPOS DE TEXTO ===== */
+fieldset textarea {
+    width: 100%;
+    padding: 10px 14px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 2px solid rgb(2, 120, 2);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: "SN Pro", sans-serif;
+    font-size: 0.95rem;
+    font-style: italic;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+}
+
+fieldset textarea:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 3px rgba(5, 182, 5, 0.25);
+}
+
+/* ===== BOTÓN ENVIAR ===== */
+fieldset input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-principal);
+    border: none;
+    border-radius: 12px;
+    font-family: "SN Pro", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+fieldset input:hover {
+    background-color: rgb(2, 120, 2);
+    color: white;
+    transform: scale(1.03);
+}
+
+/* ===== BOTÓN VOLVER ===== */
+.volver {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.volver a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--color-principal);
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.volver a:hover {
+    background-color: rgb(2, 120, 2);
+    color: white;
+    transform: scale(1.05);
+}
