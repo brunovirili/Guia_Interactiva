@@ -25,10 +25,17 @@ function configurarEventos() {
         botonVolver.addEventListener("mouseover", resaltarBoton);
         botonVolver.addEventListener("mouseout", quitarResaltado);
     }
+
     const boton = document.getElementById("btnRecomendacion");
 
     if (boton) {
     boton.addEventListener("click", mostrarRecomendacion);
+
+    const formulario = document.getElementById("formContacto");
+
+if (formulario) {
+    formulario.addEventListener("submit", validarFormulario);
+}
 }
 }
 
@@ -54,4 +61,45 @@ function mostrarRecomendacion() {
     resultado.textContent = recomendaciones[indice];
     resultado.style.fontWeight = "bold";
     resultado.style.marginTop = "15px";
+}
+
+// Valida el formulario de contacto
+function validarFormulario(evento) {
+
+    evento.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    const error = document.getElementById("mensajeError");
+
+    try {
+
+        if (nombre === "") {
+            throw new Error("Debe ingresar su nombre.");
+        }
+
+        if (email === "") {
+            throw new Error("Debe ingresar un email.");
+        }
+
+        if (!email.includes("@")) {
+            throw new Error("El email no es válido.");
+        }
+
+        if (mensaje === "") {
+            throw new Error("Debe escribir un mensaje.");
+        }
+
+        error.style.color = "green";
+        error.textContent = "Formulario enviado correctamente.";
+
+    } catch (e) {
+
+        error.style.color = "red";
+        error.textContent = e.message;
+
+    }
+
 }
