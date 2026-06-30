@@ -12,10 +12,8 @@ Esta página web interactiva trata sobre la importancia de la actividad física 
 ## Tecnologías utilizadas
 - HTML
 - CSS
-- Flexbox
-- CSS Grid
-- Media Queries
-- Animaciones y transiciones CSS
+- JavaScript
+
 
 ## Mejoras visuales incorporadas
 - Menú de navegación interactivo con efectos hover
@@ -40,6 +38,9 @@ Esta página web interactiva trata sobre la importancia de la actividad física 
 
 ### Zona de contacto
 ![Captura responsive](assets/contacto.jpg)
+
+## Repositorio
+🔗(https://github.com/brunovirili/Guia_Interactiva.git)
 
 ## Autor
 - Bruno Virili
