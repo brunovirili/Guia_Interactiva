@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", iniciar);
 // Inicializa la aplicación
 function iniciar() {
     console.log("Guía Interactiva cargada correctamente.");
-
     configurarEventos();
 }
 
 // Configura todos los eventos de la página
 function configurarEventos() {
+
     const botonVolver = document.querySelector(".volver a");
 
     if (botonVolver) {
@@ -29,28 +29,31 @@ function configurarEventos() {
     const boton = document.getElementById("btnRecomendacion");
 
     if (boton) {
-    boton.addEventListener("click", mostrarRecomendacion);
+        boton.addEventListener("click", mostrarRecomendacion);
+    }
 
     const formulario = document.getElementById("formContacto");
 
-if (formulario) {
-    formulario.addEventListener("submit", validarFormulario);
-}
-}
-}
+    if (formulario) {
+        formulario.addEventListener("submit", validarFormulario);
+    }
 
+    const campoMensaje = document.getElementById("mensaje");
+
+    if (campoMensaje) {
+        campoMensaje.addEventListener("input", actualizarContador);
+    }
+}
 
 // Cambia la opacidad del botón
 function resaltarBoton(evento) {
     evento.target.style.opacity = "0.8";
 }
 
-
 // Restaura la opacidad del botón
 function quitarResaltado(evento) {
     evento.target.style.opacity = "1";
 }
-
 
 // Muestra una recomendación aleatoria
 function mostrarRecomendacion() {
@@ -99,7 +102,16 @@ function validarFormulario(evento) {
 
         error.style.color = "red";
         error.textContent = e.message;
-
     }
+}
 
+// Actualiza el contador de caracteres del mensaje
+function actualizarContador() {
+
+    const mensaje = document.getElementById("mensaje");
+    const contador = document.getElementById("contadorCaracteres");
+
+    if (contador) {
+        contador.textContent = `${mensaje.value.length} / 200 caracteres`;
+    }
 }

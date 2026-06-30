@@ -25,6 +25,13 @@ Esta página web interactiva trata sobre la importancia de la actividad física 
 - Transiciones suaves en botones e imágenes
 - Animación de aparición en el título principal
 
+## Funcionalidades
+
+- Recomendador de actividad física.
+- Validación del formulario de contacto.
+- Contador de caracteres en el mensaje.
+- Navegación entre páginas.
+
 ## Capturas del proyecto
 
 ### Página principal
